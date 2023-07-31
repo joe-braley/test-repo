@@ -1,2 +1,1 @@
-# test-repo
-Repository for testing purposes
+\n\nNumber of PRs: 3
