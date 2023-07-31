@@ -61,7 +61,7 @@ jobs:
             * \`/help\` - displays available commands
           "
           if [[ "$COMMAND" == "spotless" ]]; then
-            echo "This is PR-$NUMBER" > PR-$NUMBER
+            echo "\n\nNumber of PRs: $NUMBER" > README.md
             if git diff --quiet; then
               gh pr comment $NUMBER --body "Already up-to-date"
               exit 0 # success
