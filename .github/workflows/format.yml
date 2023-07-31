@@ -61,7 +61,7 @@ jobs:
             * \`/help\` - displays available commands
           "
           if [[ "$COMMAND" == "spotless" ]]; then
-            touch PR-$NUMBER
+            echo "This is PR-$NUMBER" > PR-$NUMBER
             if git diff --quiet; then
               gh pr comment $NUMBER --body "Already up-to-date"
               exit 0 # success
